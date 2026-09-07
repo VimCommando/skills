@@ -7,6 +7,17 @@ Reference for writing any document an agent consumes: a skill, an `AGENTS.md` / 
 
 When the document you're writing is a skill, read [`SKILL-MECHANICS.md`](SKILL-MECHANICS.md) for frontmatter, invocation choice, and router skills.
 
+## Review procedure
+
+1. Inventory the document's supported branches and the actions or reference rules each branch needs.
+2. Check every pointer: its trigger, target, availability, and path base. Follow the references needed to assess the branch.
+3. Separate ordered actions from reference material. Keep shared constraints visible and disclose branch-specific detail with an explicit trigger.
+4. Check each step's completion condition and each handoff's producer, inputs, and outputs. Resolve contradictions before shortening text.
+5. Find repeated meanings, cached environment facts, and instructions that do not change behavior. Keep one authoritative rule and useful pointers to it.
+6. Report each proposed change with its evidence and expected behavioral effect. After editing, verify links and contracts; use a realistic walkthrough when a changed branch warrants it.
+
+Complete when every supported branch is accounted for, required references resolve, and unresolved conflicts or validation gaps are explicit. Use the principles below to judge the document, not a line-count target.
+
 ## Context pointers
 
 A **context pointer** is a reference held in the agent's context that names some out-of-context material and encodes the condition for reaching it. A skill's description is one; a line in `AGENTS.md` naming a doc is the same object. The pointer's _wording_, not its target, decides when the agent reaches the material, and how reliably. A must-have target behind a weakly worded pointer is a variance bug: sharpen the wording first, and inline the material only if sharpening fails.

@@ -1,6 +1,6 @@
 # HTML Report Format
 
-The architectural review is rendered as a single self-contained HTML file in the OS temp directory. Tailwind and Mermaid both come from CDNs. Mermaid handles graph-shaped diagrams reliably; hand-built divs and inline SVG handle the more editorial visuals (mass diagrams, cross-sections). Mix the two: don't lean on Mermaid for everything, it'll start to look generic.
+The architectural review is rendered as a single HTML file in the OS temp directory. The default scaffold loads Tailwind and Mermaid from CDNs and requires network access. For offline delivery, replace CDN styling with inline CSS and diagrams with inline SVG; verify rendering before delivery. Mermaid handles graph-shaped diagrams reliably; hand-built divs and inline SVG handle the more editorial visuals (mass diagrams, cross-sections). Mix the two, but don't lean on Mermaid for everything, it'll start to look generic.
 
 ## Scaffold
 

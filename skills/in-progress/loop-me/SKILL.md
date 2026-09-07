@@ -5,7 +5,7 @@ disable-model-invocation: true
 argument-hint: "A workflow to design, or nothing to go find one"
 ---
 
-Run a stateful `/grilling` session whose only output is **workflow** specs. Use the grilling discipline (relentless, a round of questions at a time, a recommended answer attached to each) aimed at the vocabulary and goal below. Create, edit, and delete specs as the grilling resolves things.
+Run a stateful `/grilling` session whose deliverables are **workflow** specs, with NOTES.md as supporting context. Use the grilling discipline, with a round of questions at a time and a recommendation for each, aimed at the vocabulary and goal below. Create, edit, and delete specs as the grilling resolves things.
 
 ## The loop lens
 
@@ -24,7 +24,7 @@ A shared language, reached for only when a workflow calls for it: never a checkl
 
 ## Definition of done
 
-A workflow spec is done when an implementer agent could build it without asking a single question. Grill until then; nothing is done while a question remains.
+A workflow spec is done when its trigger, inputs, outputs, observable success criteria, and relevant failure behavior are explicit. Record ownership, scheduling, and checkpoints only when the workflow uses them. List unresolved decisions and mark blocking ones; a draft with open blockers is not ready for implementation.
 
 ## The workspace
 

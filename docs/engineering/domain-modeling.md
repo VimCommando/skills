@@ -74,6 +74,8 @@ No, and there is no plan for a skill that does. A domain language you do not und
 
 ## It's working if
 
+- Accepted terms appear in the correct context glossary, and unresolved terminology is named explicitly.
+
 - It stops you mid-sentence to ask which of two things you meant, instead of picking one and moving on.
 - `CONTEXT.md` changes **during** the conversation, not in a burst at the end.
 - It refuses to write an ADR for something you could undo tomorrow, and says which of the three tests failed.
