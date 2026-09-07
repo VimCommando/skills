@@ -10,7 +10,7 @@ Two-axis review of committed changes or work in progress against a fixed revisio
 
 Both axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings.
 
-Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If setup-matt-pocock-skills is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
+Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If `/setup-matt-pocock-skills` is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
 
 ## Process
 

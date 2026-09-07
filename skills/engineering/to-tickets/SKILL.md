@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Break a plan, spec, or conversation into a set of **tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If setup-matt-pocock-skills is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
+Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If `/setup-matt-pocock-skills` is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
 
 ## Process
 

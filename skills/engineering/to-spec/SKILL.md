@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 
-Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If setup-matt-pocock-skills is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
+Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If `/setup-matt-pocock-skills` is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
 
 ## Process
 
