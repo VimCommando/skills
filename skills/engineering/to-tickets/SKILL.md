@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Break a plan, spec, or conversation into a set of **tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-The issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.
+Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is missing, use a supplied spec or local source and continue the work that does not need a tracker. If `/setup-matt-pocock-skills` is available, point to it for tracker setup; otherwise keep a local draft and report the missing configuration. A missing setup skill must not block local synthesis or review.
 
 ## Process
 
@@ -30,7 +30,7 @@ Break the work into **tracer bullet** tickets.
 
 - Each slice cuts a narrow but COMPLETE path through every layer (schema, API, UI, tests): vertical, NOT a horizontal slice of one layer
 - A completed slice is demoable or verifiable on its own
-- Each slice is sized to fit in a single fresh context window
+- Each slice has a bounded behavior change, named dependencies, and a concrete verification step. Split when independent acceptance criteria can land separately or the scope cannot be verified as one unit.
 - Any prefactoring should be done first
 
 </vertical-slice-rules>
@@ -57,10 +57,14 @@ Iterate until the user approves the breakdown.
 
 ### 5. Publish the tickets to the configured tracker
 
-Publish the approved tickets. **How** depends on the tracker `/setup-matt-pocock-skills` configured; the tickets are the same either way, only the shape of the blocking edges changes:
+Before publication, verify that all blocking references resolve, no ticket blocks itself, and the graph is acyclic. Each acceptance criterion must name an observable result owned by that ticket.
+
+Publish the approved tickets. **How** depends on the configured tracker. The tickets are the same either way, only the shape of the blocking edges changes:
 
 - **Local files** → write one file per ticket under `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numbered from `01` in dependency order (blockers first). Each file's "Blocked by" lists the numbers/titles it depends on. Use the per-ticket file template below: one ticket per file, never a single combined file.
 - **A real issue tracker (GitHub, Linear, …)** → publish one issue per ticket in dependency order (blockers first) so each ticket's blocking edges can reference real identifiers. Use the platform's native blocking / sub-issue relationship where it has one; otherwise set each ticket's "Blocked by" to the blocking issues. Apply the `ready-for-agent` triage label unless instructed otherwise; the tickets are agent-grabbable by construction.
+
+If no tracker is configured, use the local-files path above and report that external publication is pending. Return every created path or issue identifier and its blocking links.
 
 Work the **frontier**: any ticket whose blockers are all done. For a purely linear chain that means top to bottom.
 

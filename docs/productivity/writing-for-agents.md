@@ -60,6 +60,8 @@ No. Finding the word that packs the most behaviour into the fewest [tokens](http
 
 ## It's working if
 
+- The review accounts for supported branches, pointer targets, completion conditions, and handoff ownership before proposing cuts.
+
 - The document gets shorter as it gets better, and you are surprised how little is left.
 - You can point at a leading word and watch it doing work in more than one place.
 - Nothing is stated twice, in any form. Duplication is the most reliable sign a document was never tested.
