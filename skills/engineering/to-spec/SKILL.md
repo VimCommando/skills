@@ -14,7 +14,7 @@ Read `docs/agents/issue-tracker.md` when it exists. If tracker configuration is 
 
 2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better - the ideal number is one.
 
-Reuse test seams already agreed in the conversation or source. Record unresolved choices under Open decisions without restarting the interview. Mark the spec as a draft when a blocking choice remains.
+   Reuse test seams already agreed in the conversation or source. Record unresolved choices under Open decisions without restarting the interview. Mark the spec as a draft when a blocking choice remains.
 
 3. Write the spec using the template below. Publish to the configured tracker within the user's requested scope; if unavailable, save `.scratch/<feature-slug>/spec.md` and report the path. Apply `ready-for-agent` only when all implementation-blocking decisions are settled. Report the artifact or issue identifier.
 

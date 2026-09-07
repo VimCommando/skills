@@ -21,7 +21,7 @@ Whatever the user said is the fixed point (a commit SHA, branch name, tag, `main
 Resolve and record the fixed point as a commit SHA, then select the scope from the request:
 
 - Committed branch or PR: `git diff <fixed-sha>...HEAD`, using the merge-base.
-- Work in progress or an Implement handoff: `git diff <fixed-sha>` for tracked changes through the working tree, including staged edits. Inventory untracked files with `git ls-files --others --exclude-standard` and read the in-scope files separately; they are absent from git diff.
+- Work in progress or an `implement` handoff: `git diff <fixed-sha>` for tracked changes through the working tree, including staged edits. Inventory untracked files with `git ls-files --others --exclude-standard` and read the in-scope files separately; they are absent from git diff.
 
 Record `git log <fixed-sha>..HEAD --oneline`, the exact diff command, scope, and in-scope file list. Honor exclusions for pre-existing unrelated edits. Give both reviewers the same frozen scope and source paths; if files change during review, recheck the affected findings.
 
