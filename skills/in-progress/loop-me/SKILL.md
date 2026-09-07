@@ -5,7 +5,7 @@ disable-model-invocation: true
 argument-hint: "A workflow to design, or nothing to go find one"
 ---
 
-Run a stateful `/grilling` session whose deliverables are **workflow** specs, with NOTES.md as supporting context. Use the grilling discipline, with a round of questions at a time and a recommendation for each, aimed at the vocabulary and goal below. Create, edit, and delete specs as the grilling resolves things.
+Run a stateful `/grilling` session whose deliverables are **workflow** specs, with `NOTES.md` as supporting context. Create `NOTES.md` if it is missing. Use the grilling discipline, with a round of questions at a time and a recommendation for each, aimed at the vocabulary and goal below. Create, edit, and delete specs as the grilling resolves things.
 
 ## The loop lens
 
